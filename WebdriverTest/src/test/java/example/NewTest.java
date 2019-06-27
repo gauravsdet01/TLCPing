@@ -19,9 +19,9 @@ public class NewTest {
 	    	//System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 	    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\chromedriver.exe");
 	    	//driver = new ChromeDriver();
-	    	//ChromeOptions options = new ChromeOptions();  
-	    	//options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
-	    	driver = new ChromeDriver();
+	    	ChromeOptions options = new ChromeOptions();  
+	    	options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
+	    	driver = new ChromeDriver(options);
 	    	//driver = new FirefoxDriver();
 		}
 	    @Test				
