@@ -22,7 +22,7 @@ public class NewTest {
 		}
 	    @Test				
 		public void testEasy() {	
-			driver.get("http://google.com");  
+			driver.get("http://theluxurycloset.com");  
 			
 		}	
 			
