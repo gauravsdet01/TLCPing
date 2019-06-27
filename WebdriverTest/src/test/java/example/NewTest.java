@@ -13,10 +13,10 @@ public class NewTest {
 		
 	    @BeforeTest
 		public void beforeTest() {	
-	    	
-	    	
+	    
 	    	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	    	System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+	    	//System.setProperty("webdriver.gecko.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\geckodriver.exe");
 	    	//driver = new ChromeDriver();
 	    	driver = new FirefoxDriver();
 		}
