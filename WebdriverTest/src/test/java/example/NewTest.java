@@ -16,7 +16,7 @@ public class NewTest {
 	    
 	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	    	//System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
-	    	//System.setProperty("webdriver.gecko.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\geckodriver.exe");
+	    //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\chromedriver.exe");
 	    	driver = new ChromeDriver();
 	    	//driver = new FirefoxDriver();
 		}
