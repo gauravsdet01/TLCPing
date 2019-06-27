@@ -13,8 +13,12 @@ public class NewTest {
 		
 	    @BeforeTest
 		public void beforeTest() {	
-	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	    	driver = new ChromeDriver();
+	    	
+	    	
+	    	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	    	System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+	    	//driver = new ChromeDriver();
+	    	driver = new FirefoxDriver();
 		}
 	    @Test				
 		public void testEasy() {	
