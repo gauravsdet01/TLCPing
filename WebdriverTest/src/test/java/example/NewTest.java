@@ -13,7 +13,7 @@ public class NewTest {
 		
 	    @BeforeTest
 		public void beforeTest() {	
-	    	System.setProperty("webdriver.chrome.driver", "C:\\selenium\\vmock\\src\\test\\resources\\Drivers\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	    	driver = new ChromeDriver();
 		}
 	    @Test				
