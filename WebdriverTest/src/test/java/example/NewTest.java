@@ -1,12 +1,19 @@
 package example;		
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;		
 import org.testng.Assert;		
-import org.testng.annotations.Test;	
+import org.testng.annotations.Test;
+
+import com.nexmo.client.NexmoClientException;
+
+
+
 import org.testng.annotations.BeforeTest;	
 import org.testng.annotations.AfterTest;		
 public class NewTest {		
@@ -25,9 +32,20 @@ public class NewTest {
 	    	//driver = new FirefoxDriver();
 		}
 	    @Test				
-		public void testEasy() {	
-			driver.get("http://theluxurycloset.com");  
-			
+		public void testEasy() throws IOException, NexmoClientException {
+	    	String expectedTitle = "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
+	    	String expectedUrl = "http://theluxurycloset.com";
+	    	driver.get(expectedUrl);  
+	    	try{
+	    		  Assert.assertEquals(expectedTitle, driver.getTitle());
+	    		  System.out.println("Navigated to correct webpage");
+	    		}
+	    		catch(Throwable pageNavigationError){
+	    		  System.out.println("Didn't navigate to correct webpage");
+	    		  SendSMS Sp = new SendSMS();
+					Sp.FailSMS();
+	    		}
+	    	
 		}	
 			
 		@AfterTest
