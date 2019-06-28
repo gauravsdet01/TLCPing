@@ -9,7 +9,7 @@ import com.nexmo.client.sms.MessageStatus;
 import com.nexmo.client.sms.SmsSubmissionResponse;
 import com.nexmo.client.sms.messages.TextMessage;
 
-public class SendSMS {
+public class SendSMSStakeholders {
   @Test
   public void FailSMS() throws IOException, NexmoClientException {
 	  String NEXMO_API_KEY = "667c1687";
@@ -21,7 +21,7 @@ public class SendSMS {
 
       TextMessage message = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER,
-              "Website is Down"
+              "There is some Failure in the System. Please refer the Report on Email with subject 'TLC Automation'"
       );
 
       SmsSubmissionResponse response = client.getSmsClient().submitMessage(message);
