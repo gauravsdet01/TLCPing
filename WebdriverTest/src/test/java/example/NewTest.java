@@ -44,6 +44,14 @@ public class NewTest {
 	    		  System.out.println("Website is Down");
 	    		  SendSMS Sp = new SendSMS();
 					Sp.FailSMS();
+					SendSMSStakeholders Sp0 = new SendSMSStakeholders();
+					Sp0.FailSMS();
+					SendSMSStakeholders1 Sp1 = new SendSMSStakeholders1();
+					Sp1.FailSMS();
+					SendSMSStakeholders2 Sp2 = new SendSMSStakeholders2();
+					Sp2.FailSMS();
+					SendSMSStakeholders3 Sp3 = new SendSMSStakeholders3();
+					Sp3.FailSMS();
 	    		}
 	    	
 		}	

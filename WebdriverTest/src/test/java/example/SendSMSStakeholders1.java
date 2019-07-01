@@ -9,7 +9,7 @@ import com.nexmo.client.sms.MessageStatus;
 import com.nexmo.client.sms.SmsSubmissionResponse;
 import com.nexmo.client.sms.messages.TextMessage;
 
-public class SendSMSStakeholders {
+public class SendSMSStakeholders1 {
   @Test
   public void FailSMS() throws IOException, NexmoClientException {
 	  String NEXMO_API_KEY = "667c1687";

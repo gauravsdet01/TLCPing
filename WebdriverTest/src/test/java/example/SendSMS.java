@@ -21,7 +21,7 @@ public class SendSMS {
 
       TextMessage message = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER,
-              "Website is Down"
+              "!!P0 Critical Alert TLC website is down!!"
       );
 
       SmsSubmissionResponse response = client.getSmsClient().submitMessage(message);
