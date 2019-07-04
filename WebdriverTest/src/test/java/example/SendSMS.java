@@ -31,7 +31,7 @@ public class SendSMS {
       
       TextMessage message1 = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER1,
-              "Papal"
+              "!!P0 Critical Alert TLC website is down!!"
       );
       
 
