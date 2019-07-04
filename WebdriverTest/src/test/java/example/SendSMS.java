@@ -14,8 +14,8 @@ public class SendSMS {
   public void FailSMS() throws IOException, NexmoClientException {
 	  String NEXMO_API_KEY = "b09b9357";
       String NEXMO_API_SECRET = "2psWek5sMueHonpV";
-      String TO_NUMBER = "+917838061776";
-      String TO_NUMBER1 = "+917981199477";
+      String TO_NUMBER = "+917981199477";
+      String TO_NUMBER1 = "+917838061776";
       String NEXMO_BRAND_NAME = "The Luxury Closet";
       
       NexmoClient client = NexmoClient.builder().apiKey(NEXMO_API_KEY).apiSecret(NEXMO_API_SECRET).build();
@@ -31,7 +31,7 @@ public class SendSMS {
       
       TextMessage message1 = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER1,
-              "!!P0 Critical Alert TLC website is down!!"
+              "Papal"
       );
       
 
