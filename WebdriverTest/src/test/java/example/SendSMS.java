@@ -12,9 +12,10 @@ import com.nexmo.client.sms.messages.TextMessage;
 public class SendSMS {
   @Test
   public void FailSMS() throws IOException, NexmoClientException {
-	  String NEXMO_API_KEY = "667c1687";
-      String NEXMO_API_SECRET = "098f4123c62c9530";
-      String TO_NUMBER = "+917838061776"; 
+	  String NEXMO_API_KEY = "b09b9357";
+      String NEXMO_API_SECRET = "2psWek5sMueHonpV";
+      String TO_NUMBER = "+917838061776";
+      String TO_NUMBER1 = "+917838061776";
       String NEXMO_BRAND_NAME = "The Luxury Closet";
       
       NexmoClient client = NexmoClient.builder().apiKey(NEXMO_API_KEY).apiSecret(NEXMO_API_SECRET).build();
@@ -23,8 +24,20 @@ public class SendSMS {
               TO_NUMBER,
               "!!P0 Critical Alert TLC website is down!!"
       );
+      
 
       SmsSubmissionResponse response = client.getSmsClient().submitMessage(message);
+      
+      
+      TextMessage message1 = new TextMessage(NEXMO_BRAND_NAME,
+              TO_NUMBER1,
+              "!!P0 Critical Alert TLC website is down!!"
+      );
+      
+
+      SmsSubmissionResponse response1 = client.getSmsClient().submitMessage(message1);
+      
+      
 
       if (response.getMessages().get(0).getStatus() == MessageStatus.OK) {
           System.out.println("Message sent successfully.");
@@ -33,4 +46,5 @@ public class SendSMS {
       }
 	  
   }
+    
 }
