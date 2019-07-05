@@ -9,7 +9,7 @@ import com.nexmo.client.sms.MessageStatus;
 import com.nexmo.client.sms.SmsSubmissionResponse;
 import com.nexmo.client.sms.messages.TextMessage;
 
-public class SendSMS extends NewTest {
+public class SendSMSDI1 extends NewTest {
   @Test
   public void FailSMS() throws IOException, NexmoClientException {
 	  String NEXMO_API_KEY = "b09b9357";
@@ -24,7 +24,7 @@ public class SendSMS extends NewTest {
       NexmoClient client = NexmoClient.builder().apiKey(NEXMO_API_KEY).apiSecret(NEXMO_API_SECRET).build();
       TextMessage message = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER,
-              "!!P0 Critical Alert TLC website is down!!"
+              "!!P0 Critical Alert Desktop Server 188.166.33.121 is down!!"
       );
       
 
@@ -33,7 +33,7 @@ public class SendSMS extends NewTest {
       
       TextMessage message1 = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER1,
-              "!!P0 Critical Alert TLC website is down!!"
+              "!!P0 Critical Alert Desktop Server 188.166.33.121 is down!!"
       );
       
 
