@@ -31,7 +31,7 @@ public class NewTest {
 	    	ChromeOptions options = new ChromeOptions();  
 	    	options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
 	    	driver = new ChromeDriver(options);
-	    	//driver = new FirefoxDriver();
+	    	//driver = new FirefoxDriver();	
 		}
 	    @Test(priority = 1)			
 		public void testEasy() throws IOException, NexmoClientException {

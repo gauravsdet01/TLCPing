@@ -14,7 +14,7 @@ public class SendSMSAPI1 extends NewTest {
   public void FailSMS() throws IOException, NexmoClientException {
 	  String NEXMO_API_KEY = "b09b9357";
       String NEXMO_API_SECRET = "2psWek5sMueHonpV";
-      String TO_NUMBER = "+917981199477";
+      String TO_NUMBER = "+919748700373";
       String TO_NUMBER1 = "+917838061776";
       String NEXMO_BRAND_NAME = "The Luxury Closet";
          
