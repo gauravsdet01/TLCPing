@@ -1,9 +1,11 @@
 package example;		
 
 import java.io.IOException;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;		
@@ -11,8 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.nexmo.client.NexmoClientException;
-
-
+import com.sun.tools.javac.util.List;
 
 import org.testng.annotations.BeforeTest;	
 import org.testng.annotations.AfterTest;		
@@ -137,33 +138,41 @@ public class NewTest {
 	    	
 		}
 
-	/*
-	 * @Test(priority = 7) public void AdminIpOne() throws IOException,
-	 * NexmoClientException { String expectedTitle7 =
-	 * "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
-	 * String expectedUrl7 = "http://188.166.40.127/"; driver.get(expectedUrl7);
-	 * try{ Assert.assertEquals(expectedTitle7, driver.getTitle());
-	 * System.out.println("Website is up"); } catch(Throwable pageNavigationError){
-	 * System.out.println("Website is Down"); SendSMSAdmin1 Sp6 = new
-	 * SendSMSAdmin1(); Sp6.FailSMS();
-	 * 
-	 * }
-	 * 
-	 * }
-	 * 
-	 * @Test(priority = 8) public void AdminIpTwo() throws IOException,
-	 * NexmoClientException { String expectedTitle8 =
-	 * "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
-	 * String expectedUrl8 = "http://188.166.90.227/"; driver.get(expectedUrl8);
-	 * try{ Assert.assertEquals(expectedTitle8, driver.getTitle());
-	 * System.out.println("Website is up"); } catch(Throwable pageNavigationError){
-	 * System.out.println("Website is Down"); SendSMSAdmin2 Sp7 = new
-	 * SendSMSAdmin2(); Sp7.FailSMS();
-	 * 
-	 * }
-	 * 
-	 * }
-	 */
+	
+//	@Test(priority = 7)
+//	public void AdminIpOne() throws IOException, NexmoClientException {
+//		String expectedTitle7 = "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
+//		String expectedUrl7 = "http://admin.theluxurycloset.com";
+//		driver.get(expectedUrl7);
+//		try {
+//			Assert.assertEquals(expectedTitle7, driver.getTitle());
+//			System.out.println("Website is up");
+//		} catch (Throwable pageNavigationError) {
+//			System.out.println("Website is Down");
+//			SendSMSAdmin1 Sp6 = new SendSMSAdmin1();
+//			Sp6.FailSMS();
+//
+//		}
+//
+//	}
+	  
+//	@Test(priority = 8)
+//	public void AdminIpTwo() throws IOException, NexmoClientException {
+//		String expectedTitle8 = "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
+//		String expectedUrl8 = "http://188.166.90.227/";
+//		driver.get(expectedUrl8);
+//		try {
+//			Assert.assertEquals(expectedTitle8, driver.getTitle());
+//			System.out.println("Website is up");
+//		} catch (Throwable pageNavigationError) {
+//			System.out.println("Website is Down");
+//			SendSMSAdmin2 Sp7 = new SendSMSAdmin2();
+//			Sp7.FailSMS();
+//
+//		}
+//
+//	}
+	 
 	    @Test(priority = 7)	
 	    public void LBIpOne() throws IOException, NexmoClientException {
 	    	String expectedTitle9 = "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
@@ -182,43 +191,51 @@ public class NewTest {
 	    	
 		}
 
-	/*
-	 * @Test(priority = 10) public void LBIptwo() throws IOException,
-	 * NexmoClientException { String expectedTitle10 = "Page Title"; String
-	 * expectedTitle10_1 = "Welcome to nginx!"; String expectedUrl10 =
-	 * "http://178.128.138.184/"; driver.get(expectedUrl10); try{ driver.wait(5000);
-	 * try { Assert.assertEquals(expectedTitle10, driver.getTitle());
-	 * 
-	 * } catch(Throwable pageNavigationError) {
-	 * Assert.assertEquals(expectedTitle10_1, driver.getTitle()); }
-	 * System.out.println("178.128.138.184 Website is up"); }
-	 * 
-	 * catch(Throwable pageNavigationError){
-	 * System.out.println("178.128.138.184 Website is Down"); SendSMSLB2 Sp9 = new
-	 * SendSMSLB2(); Sp9.FailSMS();
-	 * 
-	 * }
-	 * 
-	 * }
-	 */
-//	    @Test(priority = 8)	
-//	    public void CDNIP() throws IOException, NexmoClientException {
-//	    	String expectedTitle11 = "TLC_EN.png (772×120)";
-//	    	String expectedUrl11 = "http://cdn.theluxurycloset.com/themes/gucci/images/TLC_EN.png";
-//	    	driver.get(expectedUrl11);  
-//	    	try{
-//	    		driver.wait(3000);
-//	    		  Assert.assertEquals(expectedTitle11, driver.getTitle());
-//	    		  System.out.println("CDN Website is up");
-//	    		}
-//	    		catch(Throwable pageNavigationError){
-//	    		  System.out.println("CDN Website is Down");
-//	    		  SendSMSCDN Sp10 = new SendSMSCDN();
-//					Sp10.FailSMS();
-//					
-//	    		}
-//	    	
-//		}
+	
+	@Test(priority = 8)
+	public void LBIptwo() throws IOException, NexmoClientException {
+		String expectedTitle10 = "Page Title";
+		String expectedTitle10_1 = "Welcome to nginx!";
+		String expectedUrl10 = "http://178.128.138.184/";
+		driver.get(expectedUrl10);
+		java.util.List<WebElement> myElementList1 = driver.findElements(By.xpath("//h1[contains(text(),'Welcome to nginx!')]"));
+		java.util.List<WebElement> myElementList2 = driver.findElements(By.xpath("//h1[contains(text(),'This is a Heading')]"));
+    	if ((myElementList1.isEmpty()) & myElementList2.isEmpty())
+    	{
+    		
+    		System.out.println("LB 178.128.138.184 is Down");
+    		 SendSMSCDN Sp10 = new SendSMSCDN();
+				Sp10.FailSMS();
+    	}
+    	else
+    	{
+    		System.out.println("LB 178.128.138.184 is UP");
+    	}
+	 
+	 }
+	 
+	    @Test(priority = 9)	
+	    public void CDNIP() throws IOException, NexmoClientException, InterruptedException {
+	    	String expectedTitle11 = "TLC_EN.png (772×120)";
+	    	String expectedUrl11 = "http://cdn.theluxurycloset.com/themes/gucci/images/TLC_EN.png";
+	    	driver.get(expectedUrl11);
+	    	//driver.findElement(By.xpath("//html//body//img"));
+	    	
+	    	java.util.List<WebElement> myElementList = driver.findElements(By.xpath("//html//body//img"));
+	    	if (myElementList.isEmpty())
+	    	{
+	    		System.out.println("CDN is Down");
+	    		 SendSMSCDN Sp10 = new SendSMSCDN();
+					Sp10.FailSMS();
+	    	}
+	    	else
+	    	{
+	    		System.out.println("CDN is UP");
+	    	}
+	    	
+	    	
+	    	
+		}
 	   
 	    
 			
