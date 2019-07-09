@@ -24,7 +24,7 @@ public class SendSMSLB1 extends NewTest {
       NexmoClient client = NexmoClient.builder().apiKey(NEXMO_API_KEY).apiSecret(NEXMO_API_SECRET).build();
       TextMessage message = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER,
-              "!!P0 Critical Alert Desktop Server 188.166.90.228 is down!!"
+              "!!P0 Critical Alert LB 188.166.77.29 is down!!"
       );
       
 
@@ -33,7 +33,7 @@ public class SendSMSLB1 extends NewTest {
       
       TextMessage message1 = new TextMessage(NEXMO_BRAND_NAME,
               TO_NUMBER1,
-              "!!P0 Critical Alert Desktop Server 188.166.90.228 is down!!"
+              "!!P0 Critical Alert LB 188.166.77.29 is down!!"
       );
       
 
