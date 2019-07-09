@@ -5,17 +5,9 @@
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="AdminIpTwo"/>
-          <include name="APIIpOne"/>
-          <include name="DekstopIpTwo"/>
-          <include name="DekstopIpOne"/>
-          <include name="LBIptwo"/>
           <include name="afterTest"/>
-          <include name="AdminIpOne"/>
-          <include name="DekstopIpThree"/>
-          <include name="APIIpTwo"/>
           <include name="beforeTest"/>
-          <include name="LBIpOne"/>
+          <include name="CDNIP"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>
