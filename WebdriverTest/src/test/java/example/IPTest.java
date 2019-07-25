@@ -2,7 +2,10 @@ package example;
 
 //Java Program to Ping an IP address 
 import java.io.*; 
-import java.net.*; 
+import java.net.*;
+import java.net.http.HttpResponse;
+
+import kong.unirest.Unirest; 
 
 class IPTest
 { 
@@ -30,5 +33,10 @@ public static void main(String[] args)
 
 	ipAddress = "188.166.90.228"; 
 	sendPingRequest(ipAddress); 
+	
+	kong.unirest.HttpResponse<String> response = Unirest.get("https://panel.apiwha.com/send_message.php?apikey=GBIF65QRN7SJC3M422P0&number=919541880003&text=!!P0+Critical+Alert+TLC+website+is+down!!W")
+			  .asString();
+	
+	
 } 
 } 

@@ -24,9 +24,9 @@ public class NewTest {
 	    @BeforeTest
 		public void beforeTest() {	
 	        
-	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	    	//System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
-	    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //On server
+	    	////System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+	    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\chromedriver.exe"); //on local
 	    	//driver = new ChromeDriver();
 	    	ChromeOptions options = new ChromeOptions();  
 	    	options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
@@ -235,7 +235,98 @@ public class NewTest {
 	    	
 	    	
 	    	
+	    	
+	    	
 		}
+	    
+	    
+	    @Test(priority = 10)
+		public void ES1() throws IOException, NexmoClientException {
+			String expectedUrl10 = "http://uat2.theluxurycloset.com/sssp/es.php?ESSV=ES1";
+			driver.get(expectedUrl10);
+			String bodyText = driver.findElement(By.tagName("body")).getText();
+
+			try {
+				Assert.assertTrue(bodyText.contains("max_score"));
+				System.out.println("ES1 is up");
+			} catch (Throwable pageNavigationError) {
+				System.out.println("ES1 is Down");
+				SendSMSES1 Sp10 = new SendSMSES1();
+				Sp10.FailSMS();
+
+			}
+
+		}
+
+			@Test(priority = 11)
+			public void ES2() throws IOException, NexmoClientException {
+				String expectedUrl10 = "http://uat2.theluxurycloset.com/sssp/es.php?ESSV=ES2";
+				driver.get(expectedUrl10);
+				String bodyText = driver.findElement(By.tagName("body")).getText();
+
+				try {
+					Assert.assertTrue(bodyText.contains("max_score"));
+					System.out.println("ES2 is up");
+				} catch (Throwable pageNavigationError) {
+					System.out.println("ES2 is Down");
+					SendSMSES2 Sp11 = new SendSMSES2();
+					Sp11.FailSMS();
+
+				}
+
+			}
+			@Test(priority = 12)
+			public void ES3() throws IOException, NexmoClientException {
+				String expectedUrl10 = "http://uat2.theluxurycloset.com/sssp/es.php?ESSV=ES3";
+				driver.get(expectedUrl10);
+				String bodyText = driver.findElement(By.tagName("body")).getText();
+
+				try {
+					Assert.assertTrue(bodyText.contains("max_score"));
+					System.out.println("ES3 is up");
+				} catch (Throwable pageNavigationError) {
+					System.out.println("ES3 is Down");
+					SendSMSES3 Sp12 = new SendSMSES3();
+					Sp12.FailSMS();
+
+				}
+
+			}
+			@Test(priority = 13)
+			public void ES4() throws IOException, NexmoClientException {
+				String expectedUrl10 = "http://uat2.theluxurycloset.com/sssp/es.php?ESSV=ES4";
+				driver.get(expectedUrl10);
+				String bodyText = driver.findElement(By.tagName("body")).getText();
+
+				try {
+					Assert.assertTrue(bodyText.contains("max_score"));
+					System.out.println("ES4 is up");
+				} catch (Throwable pageNavigationError) {
+					System.out.println("ES4 is Down");
+					SendSMSES4 Sp13 = new SendSMSES4();
+					Sp13.FailSMS();
+
+				}
+
+			}
+			@Test(priority = 14)
+			public void ES5() throws IOException, NexmoClientException {
+				String expectedUrl10 = "http://uat2.theluxurycloset.com/sssp/es.php?ESSV=ES5";
+				driver.get(expectedUrl10);
+				String bodyText = driver.findElement(By.tagName("body")).getText();
+
+				try {
+					Assert.assertTrue(bodyText.contains("max_score"));
+					System.out.println("ES5 is up");
+				} catch (Throwable pageNavigationError) {
+					System.out.println("ES5 is Down");
+					SendSMSES5 Sp14 = new SendSMSES5();
+					Sp14.FailSMS();
+
+				}
+			}
+
+
 	   
 	    
 			

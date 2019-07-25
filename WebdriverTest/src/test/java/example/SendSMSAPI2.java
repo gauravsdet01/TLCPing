@@ -9,6 +9,8 @@ import com.nexmo.client.sms.MessageStatus;
 import com.nexmo.client.sms.SmsSubmissionResponse;
 import com.nexmo.client.sms.messages.TextMessage;
 
+import kong.unirest.Unirest;
+
 public class SendSMSAPI2 extends NewTest {
   @Test
   public void FailSMS() throws IOException, NexmoClientException {
@@ -39,7 +41,16 @@ public class SendSMSAPI2 extends NewTest {
 
       SmsSubmissionResponse response1 = client.getSmsClient().submitMessage(message1);
       
-      
+      kong.unirest.HttpResponse<String> responsew = Unirest
+				.get("https://panel.apiwha.com/send_message.php?apikey=13NKKHFNFX1AN36OQL40&number=" + TO_NUMBER
+						+ "&text=!!P0+Critical+Alert+API+Server+188.166.63.53+is+down!!")
+				.asString();
+
+		kong.unirest.HttpResponse<String> responsew1 = Unirest
+				.get("https://panel.apiwha.com/send_message.php?apikey=13NKKHFNFX1AN36OQL40&number=" + TO_NUMBER1
+						+ "&text=!!P0+Critical+Alert+API+Server+188.166.63.53+is+down!!")
+				.asString();
+
 
       if (response.getMessages().get(0).getStatus() == MessageStatus.OK) {
           System.out.println("Message sent successfully.");

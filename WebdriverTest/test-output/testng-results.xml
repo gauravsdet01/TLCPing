@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="9" passed="9" failed="0" skipped="0">
+<testng-results total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-09T09:22:54Z" name="Default suite" finished-at="2019-07-09T09:23:33Z" duration-ms="38952">
+  <suite started-at="2019-07-25T10:40:08Z" name="Default suite" finished-at="2019-07-25T10:40:39Z" duration-ms="31319">
     <groups>
     </groups>
-    <test started-at="2019-07-09T09:22:54Z" name="Default test" finished-at="2019-07-09T09:23:33Z" duration-ms="38952">
+    <test started-at="2019-07-25T10:40:08Z" name="Default test" finished-at="2019-07-25T10:40:39Z" duration-ms="31319">
       <class name="example.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:52:54Z" name="beforeTest" finished-at="2019-07-09T14:52:57Z" duration-ms="2990" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:08Z" name="beforeTest" finished-at="2019-07-25T16:10:10Z" duration-ms="2537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testEasy()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:52:57Z" name="testEasy" finished-at="2019-07-09T14:53:09Z" duration-ms="11250" status="PASS">
+        <test-method signature="testEasy()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:10Z" name="testEasy" finished-at="2019-07-25T16:10:17Z" duration-ms="6305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method signature="DekstopIpOne()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:09Z" name="DekstopIpOne" finished-at="2019-07-09T14:53:14Z" duration-ms="4996" status="PASS">
+        <test-method signature="DekstopIpOne()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:17Z" name="DekstopIpOne" finished-at="2019-07-25T16:10:24Z" duration-ms="7102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DekstopIpOne -->
-        <test-method signature="DekstopIpTwo()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:14Z" name="DekstopIpTwo" finished-at="2019-07-09T14:53:22Z" duration-ms="8023" status="PASS">
+        <test-method signature="DekstopIpTwo()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:24Z" name="DekstopIpTwo" finished-at="2019-07-25T16:10:27Z" duration-ms="3465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DekstopIpTwo -->
-        <test-method signature="DekstopIpThree()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:22Z" name="DekstopIpThree" finished-at="2019-07-09T14:53:26Z" duration-ms="4030" status="PASS">
+        <test-method signature="DekstopIpThree()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:27Z" name="DekstopIpThree" finished-at="2019-07-25T16:10:32Z" duration-ms="5074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DekstopIpThree -->
-        <test-method signature="APIIpOne()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:26Z" name="APIIpOne" finished-at="2019-07-09T14:53:27Z" duration-ms="816" status="PASS">
+        <test-method signature="APIIpOne()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:32Z" name="APIIpOne" finished-at="2019-07-25T16:10:33Z" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- APIIpOne -->
-        <test-method signature="APIIpTwo()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:27Z" name="APIIpTwo" finished-at="2019-07-09T14:53:27Z" duration-ms="524" status="PASS">
+        <test-method signature="APIIpTwo()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:33Z" name="APIIpTwo" finished-at="2019-07-25T16:10:33Z" duration-ms="364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- APIIpTwo -->
-        <test-method signature="LBIpOne()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:27Z" name="LBIpOne" finished-at="2019-07-09T14:53:31Z" duration-ms="4145" status="PASS">
+        <test-method signature="LBIpOne()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:33Z" name="LBIpOne" finished-at="2019-07-25T16:10:36Z" duration-ms="3333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LBIpOne -->
-        <test-method signature="LBIptwo()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:31Z" name="LBIptwo" finished-at="2019-07-09T14:53:32Z" duration-ms="902" status="PASS">
+        <test-method signature="LBIptwo()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:36Z" name="LBIptwo" finished-at="2019-07-25T16:10:37Z" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LBIptwo -->
-        <test-method signature="CDNIP()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:32Z" name="CDNIP" finished-at="2019-07-09T14:53:33Z" duration-ms="554" status="PASS">
+        <test-method signature="CDNIP()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:37Z" name="CDNIP" finished-at="2019-07-25T16:10:37Z" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CDNIP -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:example.NewTest@6107227e]" started-at="2019-07-09T14:53:33Z" name="afterTest" finished-at="2019-07-09T14:53:33Z" duration-ms="700" status="PASS">
+        <test-method signature="ES1()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:37Z" name="ES1" finished-at="2019-07-25T16:10:37Z" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ES1 -->
+        <test-method signature="ES2()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:37Z" name="ES2" finished-at="2019-07-25T16:10:38Z" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ES2 -->
+        <test-method signature="ES3()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:38Z" name="ES3" finished-at="2019-07-25T16:10:38Z" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ES3 -->
+        <test-method signature="ES4()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:38Z" name="ES4" finished-at="2019-07-25T16:10:38Z" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ES4 -->
+        <test-method signature="ES5()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:38Z" name="ES5" finished-at="2019-07-25T16:10:38Z" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ES5 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:example.NewTest@fdefd3f]" started-at="2019-07-25T16:10:38Z" name="afterTest" finished-at="2019-07-25T16:10:39Z" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

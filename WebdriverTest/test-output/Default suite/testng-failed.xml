@@ -6,8 +6,8 @@
       <class name="example.NewTest">
         <methods>
           <include name="afterTest"/>
+          <include name="DekstopIpThree"/>
           <include name="beforeTest"/>
-          <include name="CDNIP"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>
