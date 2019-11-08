@@ -37,7 +37,7 @@ public class NewTest {
 	    @Test(priority = 1)			
 		public void testEasy() throws IOException, NexmoClientException {
 	    	String expectedTitle1 = "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
-	    	String expectedUrl1 = "http://theluxurycloset43.com";
+	    	String expectedUrl1 = "http://theluxurycloset.com";
 	    	driver.get(expectedUrl1);  
 	    	try{
 	    		  Assert.assertEquals(expectedTitle1, driver.getTitle());
