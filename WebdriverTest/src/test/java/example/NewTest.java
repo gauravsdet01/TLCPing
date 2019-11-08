@@ -24,10 +24,10 @@ public class NewTest {
 	    @BeforeTest
 		public void beforeTest() {	
 	        
-	    	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //On server
+	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //On server
 	    	////System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 	    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\chromedriver.exe"); //on local
-	    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
+	    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
 	    	//driver = new ChromeDriver();
 	    	ChromeOptions options = new ChromeOptions();  
 	    	options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
