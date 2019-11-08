@@ -24,9 +24,10 @@ public class NewTest {
 	    @BeforeTest
 		public void beforeTest() {	
 	        
-	    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //On server
+	    	//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); //On server
 	    	////System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 	    	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\git\\repository2\\WebdriverTest\\Driver\\chromedriver.exe"); //on local
+	    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\gaura\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
 	    	//driver = new ChromeDriver();
 	    	ChromeOptions options = new ChromeOptions();  
 	    	options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
@@ -36,7 +37,7 @@ public class NewTest {
 	    @Test(priority = 1)			
 		public void testEasy() throws IOException, NexmoClientException {
 	    	String expectedTitle1 = "The Luxury Closet | Online Shopping Shoes, Bags & Watches for Men & Women";
-	    	String expectedUrl1 = "http://theluxurycloset.com";
+	    	String expectedUrl1 = "http://theluxurycloset43.com";
 	    	driver.get(expectedUrl1);  
 	    	try{
 	    		  Assert.assertEquals(expectedTitle1, driver.getTitle());
@@ -333,5 +334,6 @@ public class NewTest {
 		@AfterTest
 		public void afterTest() {
 			driver.quit();			
-		}		
+		}	
+
 }

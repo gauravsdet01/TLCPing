@@ -5,9 +5,21 @@
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="afterTest"/>
+          <include name="APIIpOne"/>
+          <include name="testEasy"/>
           <include name="DekstopIpThree"/>
+          <include name="ES3"/>
+          <include name="APIIpTwo"/>
+          <include name="ES1"/>
+          <include name="ES4"/>
           <include name="beforeTest"/>
+          <include name="ES2"/>
+          <include name="CDNIP"/>
+          <include name="ES5"/>
+          <include name="DekstopIpTwo"/>
+          <include name="DekstopIpOne"/>
+          <include name="LBIptwo"/>
+          <include name="LBIpOne"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>
